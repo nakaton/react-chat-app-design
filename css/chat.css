@@ -62,7 +62,7 @@ body {
     padding-left: 48px;
     padding-right: 20px;
     font-size: 1.4rem;
-    background: url('../images/search.png') no-repeat rgba(255, 255, 255, 0.25);
+    background: url('../images/search.svg') no-repeat rgba(255, 255, 255, 0.25);
     background-position: 15px center;
     background-size: 20px 20px;
 }
@@ -105,12 +105,24 @@ body {
 
 
 #chat-title {
+    display: grid;
+    grid: 36px / 1fr 36px;
+    align-content: center;
+    align-items: center;
     grid-area: chat-title;
     color: #0048AA;
     font-weight: bold;
     font-size: 2.0rem;
     border-radius: 0 10px 0 0;
     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+    padding: 0 20px;
+}
+
+#chat-title > img {
+    cursor: pointer;
+    width: 80%;
+    height: auto;
+    justify-self: right;
 }
 
 #chat-message-list {
@@ -118,7 +130,30 @@ body {
 }
 
 #chat-form {
+    display: grid;
+    grid: 51px / 32px 1fr;
+    align-content: center;
+    align-items: center;
+    grid-gap: 15px;
     grid-area: chat-form;
     border-radius: 0 0 10px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding-left: 42px;
+    padding-right: 22px;
 }
+
+#chat-form input {
+    outline: none;
+    padding: 15px;
+    border: 2px solid #ddd;
+    color: #330;
+    border-radius: 6px;
+    font-size: 1.4rem;
+
+}
+
+#chat-form img {
+    width: 32px;
+    height: auto;
+}
+
