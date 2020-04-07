@@ -1,7 +1,6 @@
-This is the html layout design for the react chat app.
-Also doing some CSS exercise.
+# This is the HTML / CSS layout design exercise for a react chat app.
 
-Layout as below:
+## Layout as below:
 
 ![Image description](layout-demo/design.png)
 
